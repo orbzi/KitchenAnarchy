@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class KitchenObject : MonoBehaviour
@@ -33,4 +34,19 @@ public class KitchenObject : MonoBehaviour
     }
 
     public IKitchenObjectParents GetKitchenObjectParents() { return kitchenObjectParents; }
+
+    public void DestroySelf()
+    {
+        kitchenObjectParents.ClearKitchenObject();
+        Destroy(gameObject);
+    }
+
+    public static KitchenObject SpawnKitchenObject(KitchenObjectSO kitchenObjectSO, IKitchenObjectParents kitchenObjectParents)
+    {
+        Transform kitchenObjectTransform = Instantiate(kitchenObjectSO.prefab);
+        KitchenObject kitchenObject = kitchenObjectTransform.GetComponent<KitchenObject>();
+        kitchenObject.SetKitchenObjectParents(kitchenObjectParents);
+
+        return kitchenObject;
+    }
 }
