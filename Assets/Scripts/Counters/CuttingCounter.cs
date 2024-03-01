@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -106,13 +107,30 @@ public class CuttingCounter : BaseCounter, IHasProgress
 
     private CuttingRecipeSO GetCuttingRecipeSOWithInput(KitchenObjectSO inputKitchenObjectSO)
     {
-        foreach (CuttingRecipeSO cuttingRecipeSO in cuttingRecipeSOArray)
+        if (cuttingRecipeSOArray.Length > 0)
         {
-            if (cuttingRecipeSO.input == inputKitchenObjectSO)
+            foreach (CuttingRecipeSO cuttingRecipeSO in cuttingRecipeSOArray)
             {
-                return cuttingRecipeSO;
-            }
+                if (cuttingRecipeSO != null)
+                {
+                    if (cuttingRecipeSO.input == inputKitchenObjectSO)
+                    {
+                        return cuttingRecipeSO;
+                    } 
+                }
+
+                else
+                {
+                    Debug.LogError("cuttingRecipeSO is null!");
+                }
+            } 
         }
+
+        else
+        {
+            Debug.LogError("cuttingRecipeSOArray is empty!");
+        }
+
         return null;
     }
 }

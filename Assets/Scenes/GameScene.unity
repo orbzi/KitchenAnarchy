@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1155,7 +1155,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cuttingRecipeSOArray.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 4986787fb39d1d24e83a691d7b814afa,
+      objectReference: {fileID: 11400000, guid: 24d0879f9e2474440b98a6d85bbd1bd6,
         type: 2}
     - target: {fileID: 2954611253965335619, guid: bfe4d3374266e174e91c13676a28501d,
         type: 3}
@@ -1397,7 +1397,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cuttingRecipeSOArray.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 4986787fb39d1d24e83a691d7b814afa,
+      objectReference: {fileID: 11400000, guid: 24d0879f9e2474440b98a6d85bbd1bd6,
         type: 2}
     - target: {fileID: 2954611253965335619, guid: bfe4d3374266e174e91c13676a28501d,
         type: 3}

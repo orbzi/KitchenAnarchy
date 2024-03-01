@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 413ab581e3db6d44983b0410dcbc23ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 46a1dafad7892e04dabf7f40121f48c7, type: 3}
   m_Name: Cabbage - CabbageSlices
   m_EditorClassIdentifier: 
   input: {fileID: 11400000, guid: 1d48c4c00b7304f4dab6106525d2c129, type: 2}
   output: {fileID: 11400000, guid: 4a5dffb57fbdc104d974dd2781a96341, type: 2}
-  cuttingProgressMax: 5
+  cuttingProgressMax: 3
